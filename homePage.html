@@ -2,6 +2,9 @@
 
 <html>
 <head>
+  <link rel="stylesheet" href="styleDropMen.css">
+
+  
   
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,48 +14,7 @@
 
     
 
-		.dropdown {
-			position: relative;
-			display: inline-block;
-			background-color: blue;
-			color: white;
-			font-size: 16px;
-			font-weight: bold;
-			padding: 10px;
-            width: 100%;
-			border-radius: 5px;
-      width: 980px;
-		}
-
-		/* style for the menu items */
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: white;
-			z-index: 1;
-			top: 40px;
-			left: 0;
-            width: 100%;
-			border-radius: 5px;
-			padding: 10px;
-      width: 980px;
-		}
-
-		.dropdown:hover .dropdown-content {
-			display: block;
-		}
-
-		.dropdown-content a {
-			color: black;
-			padding: 5px;
-			display: block;
-            width: 100%;
-		}
-
-		.dropdown-content a:hover {
-			background-color: blue;
-			color: white;
-		}
+		
         body {
             overflow-x: hidden;
              background-color: rgb(230, 235, 237);
@@ -68,30 +30,15 @@
 
         
       /* Add CSS styles for the drop-down menu */
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        width: 98.8%;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        z-index: 1;
-        
-      }
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
+     
 
 	  #counter-text {
 		font-size: 75px;
 		text-align: center;
     }
     #countdown-container{
-      width: 40px;
+      width: 200px;
       margin: 10px;
-      border-radius:5px;
-      background: #822121;
     }
     #countdown{
       padding: 30px;
@@ -108,8 +55,11 @@
 	</style>
 <center>
   <div id="countdown-container">
-      <div id="countdown" style = "position: realtive; left:80px; top:2px; background-color: yellow; ">
-          <span id="days">0days</span>        
+      <div id="countdown">
+          <span id="days">
+            <p id="num">0</p> 
+            <p>days</p>
+      </span>        
   </div>
 </center>
 
@@ -129,14 +79,23 @@
     
 
     <div class="square">
-		<h1 id = "counter-text">Counter Thing</h1>
 	</div>
 
     <div class = "text"></div> <h1> Here is some information about us, the makers of this website</h1>
     
 	
+    <script>
 
+      document.getElementByID("days") = 100;
+      document.getElementById("num").innerHTML = 10;
+      var status = false;
+      while (false)
+      {
+        num++;
+      }
+    </script>
 </body>
+
 </html>
 
 
