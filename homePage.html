@@ -49,30 +49,47 @@
       font-weight: bold;
       font-size: 30px;
     }
+    .countup {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.countup .timeel {
+  display: inline-block;
+  padding: 10px;
+  background: #151515;
+  margin: 0;
+  color: white;
+  min-width: 2.6rem;
+  margin-left: 13px;
+  border-radius: 10px 0 0 10px;
+}
+.countup span[class*="timeRef"] {
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+  background: #e8c152;
+  color: black;
+}
 		
 		
 	  
 	</style>
-<center>
-  <div id="countdown-container">
-      <div id="countdown">
-          <span id="days">
-            <p id="num">0</p> 
-            <p>days</p>
-      </span>        
-  </div>
-</center>
+
 
 </head>
 <body>
+  <div class="countup" id="countup1">
+    <span class="timeel days">00</span>
+    <span class="timeel timeRefDays">days</span>
+    
+  </div>
     
     <div class="dropdown">
 		Menu
 		<div class="dropdown-content">
 			<a href="aboutUs.html">About Us</a>
 			<a href="information.html">Information</a>
-			<a href="map.html">Map</a>
-		</div>
+			<a href="testmaps.html">Map</a>
+		</div>t
 	</div>
 
     
@@ -85,20 +102,26 @@
     
 	
     <script>
+      window.onload = function() {
+  // Month Day, Year Hour:Minute:Second, id-of-element-container
+  countUpFromTime("Jun 24, 2022 12:00:00", 'countup1'); // ****** Change this line!
+};
+function countUpFromTime(countFrom, id) {
+  countFrom = new Date(countFrom).getTime();
+  var now = new Date(),
+      countFrom = new Date(countFrom),
+      timeDifference = (now - countFrom);
+    
+ 
+  days = Math.floor(timeDifference / (secondsInADay) * 1);
 
-      document.getElementByID("days") = 100;
-      document.getElementById("num").innerHTML = 10;
-      var status = false;
-      while (false)
-      {
-        num++;
-      }
+  var idEl = document.getElementById(id);
+  idEl.getElementsByClassName('days')[0].innerHTML = days;
+  clearTimeout(countUpFromTime.interval);
+  countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
+}
+
     </script>
 </body>
 
 </html>
-
-
-   
-
-    
