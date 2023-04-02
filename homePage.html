@@ -5,43 +5,21 @@
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="styleDropMen.css">
 	<title>Blue Dropdown Menu</title>
 	<style>
-		/* style for the drop-down menu */
-
-    
-
-		
-  body
-    {
-      overflow-x: hidden;
-        background-color: rgb(230, 235, 237);
-      }
-      .square {
-      height: 200px;
-      width: 100%;
-      top: 4px;
-      position: relative;
-      border-radius: 5px;
-      background-color: #867ead;
-      }
-
-        
-      /* Add CSS styles for the drop-down menu */
-      .dropdown {
-        padding: 50px;
-        position: relative;
-        display: inline-block;
-        background-color: rgb(137, 137, 224);
-        color: white;
-        font-family: "Arial";
-        font-size: 16px;
-        font-weight: bold;
-        padding: 10px;
-        width: 100%;
-        border-radius: 5px;
-        width: 980px;
+		.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-family: "Arial";
+width: 980px;
 }
 
 /* style for the menu items */
@@ -51,10 +29,11 @@
     background-color: white;
     z-index: 1;
     top: 40px;
-    left: 50px;
+    left: 0;
     width: 50%;
     border-radius: 5px;
     padding: 10px;
+    font-family: "Arial";
 width: 980px;
 }
 
@@ -67,6 +46,7 @@ width: 980px;
     padding: 5px;
     display: block;
     width: 50%;
+    font-family: "Arial";
 }
 
 .dropdown-content a:hover {
@@ -92,6 +72,7 @@ body {
 position: relative;
 display: inline-block;
 width: 98.8%;
+
 }
 .dropdown-content {
 display: none;
@@ -102,60 +83,310 @@ z-index: 1;
 .dropdown:hover .dropdown-content {
 display: block;
 }
+      .endCap{
+        width: 100%;
+       
+       
+        height:30px;
+      
+        border-color: rgb(0, 0, 0);
+        background-color:blue;
+        left: 0%;
+        bottom:0.5%;
+        position: absolute;
 
-	  #counter-text {
-		font-size: 75px;
-		text-align: center;
-    }
-    #countdown-container{
-      width: 200px;
-      margin: 10px;
-    }
-    #countdown{
-      padding: 30px;
-      background: #1d81af;
-      color: white;
-    }
-    #countdown span{
-      font-weight: bold;
-      font-size: 30px;
-    }
-    .countup {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.countup .timeel {
-  display: inline-block;
-  padding: 10px;
-  background: #151515;
-  margin: 0;
-  color: white;
-  min-width: 2.6rem;
-  margin-left: 13px;
-  border-radius: 10px 0 0 10px;
-}
-.countup span[class*="timeRef"] {
-  border-radius: 0 10px 10px 0;
-  margin-left: 0;
-  background: #e8c152;
-  color: black;
-}
-.heading2
-{
-  width: 9800px;
+      }
+      
 
-  background: #1d81af;
-  border-radius: 5px;
-}
-
-#logo {
-  width: 50%;
-    float: left;
-    padding: 20px;
+      .square {
+        width: 100%;
+        top: 10px;
+        padding: auto;
+        height: 200px;
+        border-radius: 10px;
+        background-color: lightblue;
+        margin: 0 auto;
+      }
+      .container {
+        display: flex;
+      }
+      .text-section {
+        flex: 1;
+        text-align: center;
+      }
+      .aboutTitle{
+        text-align: center;
+        font-family: "Arial";
+      
+      }
+      #image{
+      border:4px solid orange;
+      width: 120px;
+      height: 100px;
+      }
+      
+      .square {
+        height: 200px;
+        width: 100%;
+        top: 4px;
+        position: relative;
+        border-radius: 5px;
+        background-color: #867ead;
+        }
   
-}
+          
+        /* Add CSS styles for the drop-down menu */
+        .dropdown {
+          padding: 50px;
+          position: relative;
+          display: inline-block;
+          background-color: rgb(137, 137, 224);
+          color: white;
+          font-family: "Arial";
+          font-size: 16px;
+          font-weight: bold;
+          padding: 10px;
+          width: 100%;
+          border-radius: 5px;
+          width: 980px;
+  }
+  
+  /* style for the menu items */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      z-index: 1;
+      top: 40px;
+      left: 50px;
+      width: 50%;
+      border-radius: 5px;
+      padding: 10px;
+  width: 980px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  
+  .dropdown-content a {
+      color: black;
+      padding: 5px;
+      display: block;
+      width: 50%;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: blue;
+      color: white;
+  }
+  body {
+      overflow-x: hidden;
+       background-color: rgb(230, 235, 237);
+  }
+      .square {
+      height: 200px;
+      width: 100%;
+      top: 4px;
+      position: relative;
+      border-radius: 5px;
+      background-color: #867ead;
+      }
+  
+  
+  /* Add CSS styles for the drop-down menu */
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  width: 98.8%;
+  text-align: right;
+  
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  
+  }
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+  
+      #counter-text {
+      font-size: 75px;
+      text-align: center;
+      }
+      #countdown-container{
+        width: 200px;
+        margin: 10px;
+      }
+      #countdown{
+        padding: 30px;
+        background: #1d81af;
+        color: white;
+      }
+      #countdown span{
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .countup {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .countup .timeel {
+    display: inline-block;
+    padding: 10px;
+    background: #151515;
+    margin: 0;
+    color: white;
+    min-width: 2.6rem;
+    margin-left: 13px;
+    border-radius: 10px 0 0 10px;
+  }
+  .countup span[class*="timeRef"] {
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+    background: #e8c152;
+    color: black;
+  }
+  .heading2
+  {
+    width: 9800px;
+  
+    background: #1d81af;
+    border-radius: 5px;
+  }
+  
+  #logo {
+    width: 50%;
+      float: left;
+      padding: 20px;
+    
+  }
+  /*
+      Drop Down Menu CSS
+      */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+    width: 980px;
+    }
+    
+    /* style for the menu items */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        top: 40px;
+        left: 0;
+        width: 50%;
+        border-radius: 5px;
+        padding: 10px;
+    width: 980px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 5px;
+        display: block;
+        width: 50%;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: blue;
+        color: white;
+    }
+    body {
+        overflow-x: hidden;
+         background-color: rgb(230, 235, 237);
+    }
+        .square {
+        height: 200px;
+        width: 100%;
+        top: 4px;
+        position: relative;
+        border-radius: 5px;
+        background-color: #867ead;
+        }
+    
+    
+    /* Add CSS styles for the drop-down menu */
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 98.8%;
+    }
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    
+    }
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    
+          
+    
+          .square {
+            width: 100%;
+            top: 10px;
+            padding: auto;
+            height: 200px;
+            border-radius: 10px;
+            background-color: lightblue;
+            margin: 0 auto;
+          }
+          .container {
+            display: flex;
+    
+          }
+        
+          .image-section{
+            flex: 1;
+            text-align: center;
+            border-radius: 5px;
+            border-color: black;
+          }
+          .text-section {
+            flex: 1;
+            text-align: center;
+            margin: 10px;
+          }
+          .aboutTitle{
+            text-align: center;
+            font-family: 'courier';
+          
+          }
+          #image{
+          border:4px solid orange;
+          width: 120px;
+          height: 100px;
+          }
+    
+    
+
 		
-		
+  body
+    {
+      overflow-x: hidden;
+        background-color: rgb(230, 235, 237);
+      }
+
+
+
 	  
 	</style>
 
@@ -173,11 +404,11 @@ display: block;
   
   
   <div>
-  
-    <div class="dropdown">Menu
-      <div id="logo">
-        <img src=https://cdn.dribbble.com/users/275430/screenshots/1076332/aa-logo.jpg width="100" height="100">
-      </div>
+    <div id="logo">
+      <img src=https://cdn.dribbble.com/users/275430/screenshots/1076332/aa-logo.jpg width="100" height="100">
+    </div>
+    <div class="dropdown"> <span id="menu">≡</span>
+      
 		<div class="dropdown-content">
 			<a href="aboutUs.html">About Us</a>
 		
@@ -196,7 +427,8 @@ display: block;
       </div>
 	</div>
 
-    <div class = "text"></div> <h1>Raising Awarness about Abortion and giving a Visualization State Laws</h1>
+    <div width></div>
+    <div class = "text"></div>  <h1>Raising Awarness about Abortion and giving a Visualization State Laws</h1>
     
       <div class = "heading2">
         <h2>This website is a tool to inform people on current abortion rights in states and general information regarding abortions
