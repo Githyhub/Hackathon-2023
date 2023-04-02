@@ -1,4 +1,4 @@
-.dropdown {
+/*.dropdown {
     position: relative;
     display: inline-block;
     background-color: blue;
@@ -12,7 +12,7 @@
 width: 980px;
 }
 
-/* style for the menu items */
+=
 .dropdown-content {
     display: none;
     position: absolute;
@@ -57,7 +57,7 @@ body {
     }
 
 
-/* Add CSS styles for the drop-down menu */
+
 .dropdown {
 position: relative;
 display: inline-block;
@@ -125,7 +125,7 @@ display: block;
         }
   
           
-        /* Add CSS styles for the drop-down menu */
+
         .dropdown {
           padding: 50px;
           position: relative;
@@ -141,7 +141,7 @@ display: block;
           width: 980px;
   }
   
-  /* style for the menu items */
+
   .dropdown-content {
       display: none;
       position: absolute;
@@ -184,7 +184,7 @@ display: block;
       }
   
   
-  /* Add CSS styles for the drop-down menu */
+
   .dropdown {
   position: relative;
   display: inline-block;
@@ -253,9 +253,7 @@ display: block;
       padding: 20px;
     
   }
-  /*
-      Drop Down Menu CSS
-      */
+ 
       .dropdown {
         position: relative;
         display: inline-block;
@@ -269,7 +267,7 @@ display: block;
     width: 980px;
     }
     
-    /* style for the menu items */
+    
     .dropdown-content {
         display: none;
         position: absolute;
@@ -312,7 +310,7 @@ display: block;
         }
     
     
-    /* Add CSS styles for the drop-down menu */
+
     .dropdown {
     position: relative;
     display: inline-block;
@@ -365,4 +363,4 @@ display: block;
           width: 120px;
           height: 100px;
           }
-    
+    */

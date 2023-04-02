@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="styleDropMen.css">
     <style>
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -14,22 +15,64 @@
     width: 100%;
     border-radius: 5px;
     font-family: "Arial";
-width: 980px;
-}
-
+   }
+   .dropdown:hover .dropdown-content {
+  display: block;
+  }
+/* Add CSS styles for the drop-down menu */
+ 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  z-index: 1;
+  
+  }
+ /*
+      Drop Down Menu CSS
+      */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+    width: 980px;
+    }
+    
+    
+    
+    
+    /* Add CSS styles for the drop-down menu */
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 98.8%;
+    text-align: right;
+    margin-top: 10px;
+    }
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
 /* style for the menu items */
 .dropdown-content {
     display: none;
-    position: absolute;
+    
     background-color: white;
     z-index: 1;
     top: 40px;
-    left: 0;
-    width: 50%;
+    right: 0;
+    width: 70px;
+    overflow: hidden;
+    text-align: right;
     border-radius: 5px;
     padding: 10px;
     font-family: "Arial";
-width: 980px;
+    margin-top: 0px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -40,14 +83,18 @@ width: 980px;
     color: black;
     padding: 5px;
     display: block;
-    width: 50%;
+    right:0;
+    width: 100%;
     font-family: "Arial";
+    
 }
 
 .dropdown-content a:hover {
     background-color: blue;
     color: white;
+    border-radius: 5px
 }
+
 body {
     overflow-x: hidden;
      background-color: rgb(230, 235, 237);
@@ -60,24 +107,14 @@ body {
     border-radius: 5px;
     background-color: #867ead;
     }
+    
 
 
-/* Add CSS styles for the drop-down menu */
-.dropdown {
-position: relative;
-display: inline-block;
-width: 98.8%;
 
-}
-.dropdown-content {
-display: none;
-position: absolute;
-z-index: 1;
 
-}
-.dropdown:hover .dropdown-content {
-display: block;
-}
+
+/* STOPPPP */
+
       .endCap{
         width: 100%;
        
@@ -119,131 +156,7 @@ display: block;
       width: 120px;
       height: 100px;
       }
-      
-      .square {
-        height: 200px;
-        width: 100%;
-        top: 4px;
-        position: relative;
-        border-radius: 5px;
-        background-color: #867ead;
-        }
-  
-          
-        /* Add CSS styles for the drop-down menu */
-        .dropdown {
-          padding: 50px;
-          position: relative;
-          display: inline-block;
-          background-color: rgb(137, 137, 224);
-          color: white;
-          font-family: "Arial";
-          font-size: 16px;
-          font-weight: bold;
-          padding: 10px;
-          width: 100%;
-          border-radius: 5px;
-          width: 980px;
-  }
-  
-  /* style for the menu items */
-  .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: white;
-      z-index: 1;
-      top: 40px;
-      left: 50px;
-      width: 50%;
-      border-radius: 5px;
-      padding: 10px;
-  width: 980px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
-  
-  .dropdown-content a {
-      color: black;
-      padding: 5px;
-      display: block;
-      width: 50%;
-  }
-  
-  .dropdown-content a:hover {
-      background-color: blue;
-      color: white;
-  }
-  body {
-      overflow-x: hidden;
-       background-color: rgb(230, 235, 237);
-  }
-      .square {
-      height: 200px;
-      width: 100%;
-      top: 4px;
-      position: relative;
-      border-radius: 5px;
-      background-color: #867ead;
-      }
-  
-  
-  /* Add CSS styles for the drop-down menu */
-  .dropdown {
-  position: relative;
-  display: inline-block;
-  width: 98.8%;
-  text-align: right;
-  
-  }
-  .dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  
-  }
-  .dropdown:hover .dropdown-content {
-  display: block;
-  }
-  
-      #counter-text {
-      font-size: 75px;
-      text-align: center;
-      }
-      #countdown-container{
-        width: 200px;
-        margin: 10px;
-      }
-      #countdown{
-        padding: 30px;
-        background: #1d81af;
-        color: white;
-      }
-      #countdown span{
-        font-weight: bold;
-        font-size: 30px;
-      }
-      .countup {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .countup .timeel {
-    display: inline-block;
-    padding: 10px;
-    background: #151515;
-    margin: 0;
-    color: white;
-    min-width: 2.6rem;
-    margin-left: 13px;
-    border-radius: 10px 0 0 10px;
-  }
-  .countup span[class*="timeRef"] {
-    border-radius: 0 10px 10px 0;
-    margin-left: 0;
-    background: #e8c152;
-    color: black;
-  }
+    
   .heading2
   {
     width: 9800px;
@@ -258,92 +171,7 @@ display: block;
       padding: 20px;
     
   }
-  /*
-      Drop Down Menu CSS
-      */
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        background-color: blue;
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 10px;
-        width: 100%;
-        border-radius: 5px;
-    width: 980px;
-    }
-    
-    /* style for the menu items */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: white;
-        z-index: 1;
-        top: 40px;
-        left: 0;
-        width: 50%;
-        border-radius: 5px;
-        padding: 10px;
-    width: 980px;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    .dropdown-content a {
-        color: black;
-        padding: 5px;
-        display: block;
-        width: 50%;
-    }
-    
-    .dropdown-content a:hover {
-        background-color: blue;
-        color: white;
-    }
-    body {
-        overflow-x: hidden;
-         background-color: rgb(230, 235, 237);
-    }
-        .square {
-        height: 200px;
-        width: 100%;
-        top: 4px;
-        position: relative;
-        border-radius: 5px;
-        background-color: #867ead;
-        }
-    
-    
-    /* Add CSS styles for the drop-down menu */
-    .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 98.8%;
-    }
-    .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    
-    }
-    .dropdown:hover .dropdown-content {
-    display: block;
-    }
-    
-          
-    
-          .square {
-            width: 100%;
-            top: 10px;
-            padding: auto;
-            height: 200px;
-            border-radius: 10px;
-            background-color: lightblue;
-            margin: 0 auto;
-          }
+  
           .container {
             display: flex;
     
@@ -361,6 +189,7 @@ display: block;
             margin: 10px;
           }
           .aboutTitle{
+            margin-top: 10px;
             text-align: center;
             font-family: 'courier';
           
@@ -370,21 +199,24 @@ display: block;
           width: 120px;
           height: 100px;
           }
-    
+          .mainImage{
+            top: 25px;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            flex: auto;
+            border-radius: 10px;
+            padding:auto;
+
+            
+          }
       
     </style>
   </head>
   <body>
 
-   
-	  
-
-      
-  
-    
-
     <div class="dropdown">
-      Menu
+      ≡
       <div class="dropdown-content">
         <a href="homePage.html">Home</a>
         
@@ -392,7 +224,9 @@ display: block;
       </div>
     </div>
 
-    <div class="square"> </div>
+    
+      <img class = "mainImage" src="20230401_152513_HDR.svg" ><br>
+   </div>
 
     <div class = " aboutTitle">
         
