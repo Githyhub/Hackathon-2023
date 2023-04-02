@@ -2,10 +2,8 @@
 
 <html>
 <head>
-  <link rel="stylesheet" href="styleDropMen.css">
-
   
-  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Blue Dropdown Menu</title>
@@ -15,22 +13,95 @@
     
 
 		
-        body {
-            overflow-x: hidden;
-             background-color: rgb(230, 235, 237);
-}
-            .square {
-            height: 200px;
-            width: 100%;
-            top: 4px;
-            position: relative;
-            border-radius: 5px;
-            background-color: #867ead;
-            }
+  body
+    {
+      overflow-x: hidden;
+        background-color: rgb(230, 235, 237);
+      }
+      .square {
+      height: 200px;
+      width: 100%;
+      top: 4px;
+      position: relative;
+      border-radius: 5px;
+      background-color: #867ead;
+      }
 
         
       /* Add CSS styles for the drop-down menu */
-     
+      .dropdown {
+        padding: 50px;
+        position: relative;
+        display: inline-block;
+        background-color: rgb(137, 137, 224);
+        color: white;
+        font-family: "Arial";
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        width: 980px;
+}
+
+/* style for the menu items */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    top: 40px;
+    left: 50px;
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+width: 980px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px;
+    display: block;
+    width: 50%;
+}
+
+.dropdown-content a:hover {
+    background-color: blue;
+    color: white;
+}
+body {
+    overflow-x: hidden;
+     background-color: rgb(230, 235, 237);
+}
+    .square {
+    height: 200px;
+    width: 100%;
+    top: 4px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #867ead;
+    }
+
+
+/* Add CSS styles for the drop-down menu */
+.dropdown {
+position: relative;
+display: inline-block;
+width: 98.8%;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+z-index: 1;
+
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
 
 	  #counter-text {
 		font-size: 75px;
@@ -69,6 +140,20 @@
   background: #e8c152;
   color: black;
 }
+.heading2
+{
+  width: 9800px;
+
+  background: #1d81af;
+  border-radius: 5px;
+}
+
+#logo {
+  width: 50%;
+    float: left;
+    padding: 20px;
+  
+}
 		
 		
 	  
@@ -77,28 +162,47 @@
 
 </head>
 <body>
-  <div class="countup" id="countup1">
-    <span class="timeel days">00</span>
-    <span class="timeel timeRefDays">days</span>
-    
-  </div>
-    
-    <div class="dropdown">
-		Menu
+
+  <script>
+    document.addEventListener('mousemove', function(event) {
+      const x = event.clientX;
+      const y = event.clientY;
+      console.log(`Mouse position: ${x}, ${y}`);
+    });
+  </script>
+  
+  
+  <div>
+  
+    <div class="dropdown">Menu
+      <div id="logo">
+        <img src=https://cdn.dribbble.com/users/275430/screenshots/1076332/aa-logo.jpg width="100" height="100">
+      </div>
 		<div class="dropdown-content">
 			<a href="aboutUs.html">About Us</a>
-			<a href="information.html">Information</a>
+		
 			<a href="testmaps.html">Map</a>
-		</div>t
+		</div>
 	</div>
-
+</div>
     
     
 
     <div class="square">
+      <div class="countup" id="countup1">
+        <span class="timeel days">00</span>
+        <span class="timeel timeRefDays">days</span>
+        
+      </div>
 	</div>
 
-    <div class = "text"></div> <h1> Here is some information about us, the makers of this website</h1>
+    <div class = "text"></div> <h1>Raising Awarness about Abortion and giving a Visualization State Laws</h1>
+    
+      <div class = "heading2">
+        <h2>This website is a tool to inform people on current abortion rights in states and general information regarding abortions
+        </h2>
+      </div>
+      
     
 	
     <script>
@@ -106,9 +210,9 @@
   // Month Day, Year Hour:Minute:Second, id-of-element-container
   countUpFromTime("Jun 24, 2022 12:00:00", 'countup1'); // ****** Change this line!
 };
-function countUpFromTime(countFrom, id) {
+  function countUpFromTime(countFrom, id) {
   countFrom = new Date(countFrom).getTime();
-  var now = new Date(),
+    var now = new Date(),
       countFrom = new Date(countFrom),
       timeDifference = (now - countFrom);
     
