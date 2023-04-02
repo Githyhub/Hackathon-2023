@@ -2,13 +2,17 @@
 
 <html>
 <head>
+  
+  
    <link rel="stylesheet" href="styleDropMen.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 	<title>Blue Dropdown Menu</title>
 	<style>
+    /*  The Code above that says link styleDropMen.css was ment to make a uniform style sheet that is editable but VS code was unable to make this functionable */
     
+    /* This is out drop down menu, it is the blue tab at the top and when you scroll over it it shows drop down menus. */
 		.dropdown {
     position: relative;
     display: inline-block;
@@ -60,11 +64,16 @@
     color: white;
     border-radius: 5px
    
+
+    
 }
+/* This sets the back groud color and locks scrolling in the x direction */
 body {
     overflow-x: hidden;
      background-color: rgb(230, 235, 237);
 }
+
+/* This is a class for a square, we used this for the drop down menu and other things too plot out the website in ealry stages. */
     .square {
     height: 200px;
     width: 100%;
@@ -93,6 +102,8 @@ body {
   text-align: center;
   margin: 10px;
 }
+
+/* This is the code for the count down time that counts how many days since ROE v wade was overturned */
 .countup .timeel {
   font-family: 'courier';
   display: inline-block;
@@ -123,6 +134,7 @@ body {
   font-size: 23
 }
 
+/* This makes a grid for the bottom two subsections. */
   #info-grid
   {
     width: 75%;
@@ -224,11 +236,9 @@ body {
           height: 100px;
           }
 
-  body
-    {
-      overflow-x: hidden;
-        background-color: rgb(230, 235, 237);
-      }
+ 
+
+      /* These are the classes that alter the two images down below */
       .subImg{
         position:relative;
        height: 65%;
@@ -243,10 +253,10 @@ body {
        top: 35%
       }
 
-      .mainImg{
+      .mainImgy{
             
-            text-align: center;
-            width: 80%;
+            text-align: left;
+            width: 98.9%;
             position: relative;
             flex: auto;
             border-radius: 50 px;
@@ -255,6 +265,8 @@ body {
             
           }
 
+          /* This is the bottom bar to make sure to let the user know that they reached the bottom  */
+
   #bottom-bar {
     position: bottom;
     width: 100%;
@@ -262,9 +274,12 @@ body {
     background-color: blue;
     overflow: hidden;
   }
+
+
 	  
 	</style>
 
+<! -- This is the start of the code-->
 
 </head>
 <body>
@@ -272,6 +287,7 @@ body {
   
   
   <div>
+    <! -- This shows the three lines for the drop down menu and allows linage between them,-->
     
     <div class="dropdown"> <span id="menu">≡</span>
       
@@ -286,10 +302,14 @@ body {
     
 
     <div >
-      <img class = "mainImg" src="images2247-6103bd673b1a8.svg"  ><br>
+
+
+      <img class = "mainImgy" src="images2247-6103bd673b1a8.svg"  ><br>
+      </div>
       <center>
       
           
+        <! -- This is the counter -->
       <div class="countup" id="countup1">
         <h1 class = "Overturned">
           DAYS SINCE ROE VS WADE WAS OVERTURED
@@ -310,7 +330,7 @@ body {
 
     <div width></div>
   
-    
+    <! -- This is the body of the code.-->
       <div id = "info-grid">
         
       <div class="grid">
@@ -358,7 +378,7 @@ body {
 
   <div id="bottom-bar"></div>
       
-    
+  <! -- This is the script for the timer-->
 	
     <script>
      window.onload = function() {
